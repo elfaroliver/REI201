@@ -42,14 +42,14 @@ class Skil(object):
         """tekur sem tekur in streng S og skilar True ef S er eins afturábak og
         áfram, false annars."""
         if (S == S[::-1]):
-            print("Palindrome")
+            return True
         else:
-            print("Ekki palindrome")
+            return False
 
 
     #Daemi 5
     def fun5(self,u):
     #Skila radius hrings med ummal u
-        u = float(input("Gemmér ummál"))
+        #u = float(input("Gemmér ummál"))
         radius = (u/(2*math.pi))
         return radius
