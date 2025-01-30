@@ -21,8 +21,14 @@ def annadStig ():
         x2 = (-b-math.sqrt(b**2-4*a*c))/2*a
         print("Tvær lausnir"), x1, " og", x2
 
-def Trapisa (f):
-    #import math
+def Trapisa ():
+    
+    import math
+
+    #global f_global
+    #f_global = f
+
+    f = lambda x: x**2
 
     a = float(input("Sláðu inn gildi fyrir a: "))
     b = float(input("Sláðu inn gildi fyrir b: "))
