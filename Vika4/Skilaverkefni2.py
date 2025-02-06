@@ -23,7 +23,7 @@ class Skil(object):
             else: 
                 sum += 4 * f(x_i)
 
-        return sum * (h / 2)
+        return sum * (h / 3)
 
         #print(simpson(a,b,n))
 
@@ -40,28 +40,18 @@ class Skil(object):
         return int(v)
 
         #print(vextir())
-    def vextir2(self,u,p,k,m):
-    # her er haegt ad kalla self.vextir(u,p,k,m) til ad nota fyrri fallid
-        '''u = int(input("Sláðu inn gildi fyrir u: "))
-        p = int(input("Sláðu inn gildi fyrir p: "))
-        k = int(input("Sláðu inn gildi fyrir k: "))
-        m = int(input("Sláðu inn gildi fyrir m: "))'''
-
-        a = p/100
-        #v = u * ((1+a)**2) * ((1 + (a*m/12))-u)
-
-        vextir_result = self.vextir(u, p, k, m)
-
+    def vextir2(self, p):
+        u = 3000
+        #a = p/100
         lokaupphaed = u * 2
-
-        #k = 0
-        #m = 0
 
         man = 0
         ar = 0
         
         while u < lokaupphaed:
-            u *= (1 + a / 12)
+            vextir = self.vextir(u, p, ar, man)
+            if u + vextir > lokaupphaed:
+                return ar, man
             man += 1
             if man == 12:
                 man = 0
@@ -97,7 +87,12 @@ class Skil(object):
     #print(dict_creator())
 
 
-
+    '''skil = Skil()
+    val = skil.vextir(300000,20,10,1)
+    f = lambda x: x**2
+    result = skil.simpson(f, 0, 3, 6)
+    print(val)
+    print(result)'''
     #ls1 = [23,2,1,6,7,3,4,6,7]
     #ls2 = ["kale","enia","hewg","roderika","marika","thops","rogier","iji","millicent"]
 
@@ -110,6 +105,4 @@ class Skil(object):
     # getid keyrt tetta allt i kodacellu i vscode(i einu)
     #eda keyrt skil_s2.py i command line.
     #daemi ad nedan
-    #skil = Skil()
-            #val = skil.vextir(300000,20,10,1)
-    #print(val)
+    
