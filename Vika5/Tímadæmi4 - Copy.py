@@ -1,4 +1,4 @@
-#https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/ kenndi mér að importa matplotlib. Sorry ef þú kenndir það líka, hehe
+#https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/
 
 import matplotlib.pyplot as plt
 
