@@ -1,8 +1,14 @@
 class Skil(object):
     """Skilaverkefni 3 f. REI"""
     def arr_to_dict(self, arr):
+        '''Skrifið fall arr_to_dict(arr) þar sem tekur inn fylki og skilar uppflettitöflu. Lyklarnir í töflunni eru staðsetningar í fylkinu og eru tjáðir með tvenndinni (röð, dálkur). Gildin í töflunni eru gildin í fylkinu með tilsvarandi staðsetningu. Ef d = arr_to_dict(arr) þá gildir að d[(i, j)] == arr[i][j].
+
+        Inntak: arr er ferningsfylki sem tjáð er sem listi af listum (sjá að ofan).
+        Skilar: Uppflettitöflu d sem geymir sérhvert stak arr[i][j] með lykli (i, j).
+        '''
 
 
+        
         ...
     def dict_to_arr(self, d):
 
